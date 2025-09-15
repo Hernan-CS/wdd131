@@ -1,0 +1,56 @@
+@media (max-width: 768px) {
+
+    .navigation {
+            display: none;
+        }
+
+    #menu {
+        display: block;
+        font-size: 2rem;
+        background: none;
+        border: 0;
+        color: white;
+        cursor: pointer;
+        }
+
+    #menu::before {
+        content: "☰";
+    }
+
+    #menu.open::before {
+        content: "❌";
+    }
+
+    .gallery {
+        grid-template-columns: 1fr;
+    }
+
+    .navigation.open {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: #9448bd;
+    }
+
+    .navigation.open a {
+        display: block;
+        padding: 1rem;
+        color: white;
+        text-decoration: none;
+        text-align: center;
+        font-weight: bold;
+    }
+
+    .navigation a:hover {
+        background-color: #bbb;
+        color: #333;
+        font-weight: 700;
+    }
+    .open a {
+        display: block;
+    }
+}
+

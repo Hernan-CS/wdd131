@@ -1,0 +1,129 @@
+/* NOTE: In temples.css is the code that will be apply as long as the user is using a laptop/computer 
+and within temples-large.css is the code that will be applied whenever a mobile user visit the page.
+I didn't change the name from temples-'large'.css to 'small' since the assignment asked us to set 
+that name, I did it the other way round, as it was easier to understand for me. I hope it's not a problem. */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+#menu {
+    display: none;
+}
+
+/* ============================= HEADER ============================= */
+
+header {
+    background-color: #4a0072;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    position: relative;
+}
+
+header h1 {
+    font-size: 1.5rem;
+}
+
+header {
+    background-color: #4a0072;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+}
+
+header h1 {
+    font-size: 1.5rem;
+}
+
+/* -------------- NAVIGATION -------------- */
+    
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* ============================= MAIN ============================= */
+
+main {
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+main h1 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 1.5rem;
+}
+
+figure {
+    text-align: center;
+}
+
+figure img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 8px;
+}
+
+figcaption {
+    margin-top: 0.5rem;
+    font-size: 1rem;
+    color: #333;
+}
+
+/* ============================= FOOTER ============================= */
+
+footer {
+  background: #4a0072;
+  padding: 1rem;
+  text-align: center;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  line-height: 1;
+}
+
+footer p {
+  font-size: 20px;
+  color: white;
+}
+
+#lastModified {
+  font-size: 15px;
+  color: rgb(184, 122, 241);
+}
+
+    
