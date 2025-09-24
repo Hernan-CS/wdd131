@@ -1,83 +1,84 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en-US">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Madagascar</title>
-    <link rel="stylesheet" href="styles/test-mobile.css">
-    <link rel="stylesheet" href="styles/test-desktop.css" media="(min-width: 992px)">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <title>WDD 131 – Dynamic Web Fundamentals – Hernan Cancino</title>
+    <meta name="description" content="Temples | Hernan Cancino |">
+    <meta name="author" content="Hernan Cancino">
+    <link rel="stylesheet" href="styles/temples.css">
+    <link rel="stylesheet" href="styles/temples-large.css">
+    <script src="scripts/temples.js" defer></script>
 </head>
 <body>
+    <header>
+        <h1>Temple Album</h1>
+        <nav>
+            <button type="button" id="menu"></button>
+            <ul class="navigation">
+                <li><a href='#'>Home</a></li>
+                <li><a href='#'>Old</a></li>
+                <li><a href='#'>New</a></li>
+                <li><a href='#'>Large</a></li>
+                <li><a href='#'>Small</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Home</h1>
+        <div class="gallery">
+        <figure>
+            <img src="images/salt-lake-temple.jpg" alt="Salt Lake Temple">
+            <figcaption>Salt Lake Temple</figcaption>
+        </figure>
 
-    <div class="card-container">
-        <header>
-            <h1>Madagascar</h1>
-        </header>
+        <figure>
+            <img src="images/lima-temple.jpg" alt="Lima Peru Temple">
+            <figcaption>Lima Peru Temple</figcaption>
+        </figure>
 
-        <main class="content-wrapper">
-            
-            <div class="info-box data-box">
-                <h2>Data</h2>
-                <dl>
-                    <div>
-                        <dt>Area:</dt>
-                        <dd>587,041 sq km</dd>
-                    </div>
-                    <div>
-                        <dt>Population:</dt>
-                        <dd>27,691,018</dd>
-                    </div>
-                    <div>
-                        <dt>Capital:</dt>
-                        <dd>Antananarivo</dd>
-                    </div>
-                    <div>
-                        <dt>Languages:</dt>
-                        <dd>Malagasy, French</dd>
-                    </div>
-                    <div>
-                        <dt>Currency:</dt>
-                        <dd>Malagasy Ariary</dd>
-                    </div>
-                    <div>
-                        <dt>Time Zone:</dt>
-                        <dd>UTC+3</dd>
-                    </div>
-                    <div>
-                        <dt>Calling Code:</dt>
-                        <dd>+261</dd>
-                    </div>
-                    <div>
-                        <dt>Internet TLD:</dt>
-                        <dd>.mg</dd>
-                    </div>
-                </dl>
-            </div>
+        <figure>
+            <img src="images/arequipa-temple.png" alt="Arequipa, Peru Temple">
+            <figcaption>Arequipa, Peru Temple</figcaption>
+        </figure>
 
-            <div class="info-box weather-box">
-                <h2>Weather</h2>
-                <div class="weather-content">
-                    <img src="https://www.svgrepo.com/show/473693/partly-cloudy-day.svg" alt="Partly cloudy icon" class="weather-icon">
-                    <ul>
-                        <li>Temperature: 10°C</li>
-                        <li>Conditions: Partly Cloudy</li>
-                        <li>Wind: 5 km/h</li>
-                        <li>Wind Chill: 9.8°C</li>
-                    </ul>
-                </div>
-            </div>
+        <figure>
+            <img src="images/trujillo-temple.jpg" alt="Trujillo, Peru Temple">
+            <figcaption>Trujillo, Peru Temple</figcaption>
+        </figure>
 
-        </main>
+        <figure>
+            <img src="images/sao-temple.jpg" alt="Sao Paulo, Brazil Temple">
+            <figcaption>Sao Paulo, Brazil Temple</figcaption>
+        </figure>
 
-        <footer>
-            <p>©2024 🌺 Rubia Magdelena Francesco 🌺 Madagascar</p>
-            <p>Last Modification: <span id="last-mod"></span></p>
-        </footer>
-    </div>
+        <figure>
+            <img src="images/buen-temple.jpeg" alt="Buenos Aires, Argentina Temple">
+            <figcaption>Buenos Aires, Argentina Temple</figcaption>
+        </figure>
 
-    <script src="scripts/test.js"></script>
+        <figure>
+            <img src="images/fortaleza-temple.jpg" alt="Fortaleza, Brazil Temple">
+            <figcaption>Fortaleza, Brazil Temple</figcaption>
+        </figure>
+
+        <figure>
+            <img src="images/quito-temple.jpg" alt="Quito, Ecuador Temple">
+            <figcaption>Quito, Ecuador Temple</figcaption>
+        </figure>
+
+        <figure>
+            <img src="images/caracas-temple.jpg" alt="Caracas, Venezuela Temple">
+            <figcaption>Caracas, Venezuela Temple</figcaption>
+        </figure>
+        </div>
+    </main>
+
+    <footer>
+        <p>
+          <span id="currentyear"></span> Hernan Cancino Santiago, Peru 🍂
+        </p>
+        <p id="lastModified"></p>
+    </footer> <!-- I coppied it from the index.html as well as from the base.css and the getdates.js -->
 </body>
 </html>
