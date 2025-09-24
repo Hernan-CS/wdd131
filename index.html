@@ -1,75 +1,83 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WDD 131 – Dynamic Web Fundamentals – Hernan Cancino</title>
-    <meta name="description" content="Website for WDD 131 – Dynamic Web Fundamentals | Hernan Cancino | With the aim of functioning as a home page for future projects. ">
-    <meta name="author" content="Hernan Cancino">
-    <link rel="stylesheet" href="styles/base.css">
-    <script src="scripts/getdates.js" defer></script>
+    <title>Madagascar</title>
+    <link rel="stylesheet" href="styles/test-mobile.css">
+    <link rel="stylesheet" href="styles/test-desktop.css" media="(min-width: 992px)">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <span id="course-title">WDD 131: Dynamic Web Fundamentals - <span id="name">Hernan C. Santiago</span></span>
-        <nav>
-          <a href="https://www.linkedin.com/in/hernan-cancino/">LinkedIn</a>
-          <a href="https://byupw.instructure.com/">Canvas</a>
-          <a href="https://www.churchofjesuschrist.org/study/scriptures/ot/1-kgs/3?lang=spa&id=p7-p8#p7">Scripture</a>
-          <a href="#">Final Project</a>
-        </nav>
-    </header>
 
-    <main>
-        <section class="card">
-          <h2>About me</h2>
-          <div class="content">
-            <p>
-                Hi there! It's me, Hernan Cancino. I'm from South America, specifically in Peru, a very famous country for its cuisine, you should try it. Anyways, I was born in the region of Lima, which is located in the western part of the country. I love learning languages, I've already learned three besides my native one, it's awesome, but a headache too. What's more, I love programming, but I'm just a beginner, so I really want to get more into this.
-            </p>    
-          <img src="images/selfie.jpg" alt="Profile Picture" width="120" height="160"/>
+    <div class="card-container">
+        <header>
+            <h1>Madagascar</h1>
+        </header>
+
+        <main class="content-wrapper">
             
-          </div>
-                    
-          <div class="content">
-            <div class="country">
-            <h3>Lima, Peru</h3>
-              
-              <div class="flag-and-text">
-                <figure>
-                  <img src="images/peruvian_flag.png" alt="Flag of Peru">
-                  <figcaption>Official Flag of Peru</figcaption>
-                </figure>
-                <p>
-                  Peru is a South American country known for its diverse landscapes, from the Andes mountains to the Amazon rainforest. 
-                  It is rich in history, with the legacy of the Inca civilization and world-famous landmarks like Machu Picchu, as well as 
-                  vibrant culture and cuisine.
-                </p>
-              </div>
+            <div class="info-box data-box">
+                <h2>Data</h2>
+                <dl>
+                    <div>
+                        <dt>Area:</dt>
+                        <dd>587,041 sq km</dd>
+                    </div>
+                    <div>
+                        <dt>Population:</dt>
+                        <dd>27,691,018</dd>
+                    </div>
+                    <div>
+                        <dt>Capital:</dt>
+                        <dd>Antananarivo</dd>
+                    </div>
+                    <div>
+                        <dt>Languages:</dt>
+                        <dd>Malagasy, French</dd>
+                    </div>
+                    <div>
+                        <dt>Currency:</dt>
+                        <dd>Malagasy Ariary</dd>
+                    </div>
+                    <div>
+                        <dt>Time Zone:</dt>
+                        <dd>UTC+3</dd>
+                    </div>
+                    <div>
+                        <dt>Calling Code:</dt>
+                        <dd>+261</dd>
+                    </div>
+                    <div>
+                        <dt>Internet TLD:</dt>
+                        <dd>.mg</dd>
+                    </div>
+                </dl>
             </div>
-          </div>
-        </section>
 
-        <section class="card">
-        <h2>Web Dev Resources</h2>
-          <ul>
-            <li><a href="https://dev.to/">Dev.to Community</a></li>
-            <li><a href="https://www.smashingmagazine.com/">Smashing Magazine</a></li>
-            <li><a href="https://css-tricks.com/">CSS Tricks</a></li>
-            <li><a href="https://www.w3schools.com/">W3 Schools</a></li>
-            <li><a href="https://www.udemy.com/">Udemy</a></li>
-            <li><a href="https://placeholder.com/">Image Placeholder</a></li>
-          </ul>
-        </section>
-    </main>
+            <div class="info-box weather-box">
+                <h2>Weather</h2>
+                <div class="weather-content">
+                    <img src="https://www.svgrepo.com/show/473693/partly-cloudy-day.svg" alt="Partly cloudy icon" class="weather-icon">
+                    <ul>
+                        <li>Temperature: 10°C</li>
+                        <li>Conditions: Partly Cloudy</li>
+                        <li>Wind: 5 km/h</li>
+                        <li>Wind Chill: 9.8°C</li>
+                    </ul>
+                </div>
+            </div>
 
-    <footer>
-        <p>
-          <span id="currentyear"></span> Hernan Cancino Santiago, Peru
-        </p>
-        <p id="lastModified"></p>
+        </main>
 
-    </footer>
-    
+        <footer>
+            <p>©2024 🌺 Rubia Magdelena Francesco 🌺 Madagascar</p>
+            <p>Last Modification: <span id="last-mod"></span></p>
+        </footer>
+    </div>
+
+    <script src="scripts/test.js"></script>
 </body>
 </html>

@@ -1,0 +1,32 @@
+/* ===========================
+   MEDIA QUERIES
+=========================== */
+@media (max-width: 600px) {
+    .weather h2::after {
+        content: "";
+    }
+
+    .weather-icon-mobile {
+        display: block;
+    }
+
+    .data h2::after {
+        content: "";
+    }
+
+    .data-icon-mobile {
+        display: block;
+    }
+
+    .overlay {
+        position: static;
+        margin: 15px auto;
+        width: 90%;
+    }
+
+    .hero {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}

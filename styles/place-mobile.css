@@ -1,0 +1,118 @@
+/* ===========================
+   GLOBAL STYLES
+=========================== */
+
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --main-red: #c61e2f;
+    --main-green: #3b0303;
+    --main-bg: #ffffff;
+    --font-color: #000000;
+    --max-width: 1800px;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: var(--font-color);
+    background-color: var(--main-bg);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-x: hidden;
+
+}
+
+/* ===========================
+   HEADER
+=========================== */
+header {
+    width: 100%;
+    background-color: var(--main-red);
+    color: white;
+    text-align: center;
+    padding: 20px;
+    border-bottom: 25px solid var(--main-green);
+}
+
+/* ===========================
+   HERO SECTION
+=========================== */
+.hero {
+    position: relative;
+    width: 100%;
+    max-width: var(--max-width);
+    margin: 0 auto;
+}
+
+.hero-img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+    margin: 0;
+    padding: 0;
+}
+
+/* ===========================
+   OVERLAY BOXES
+=========================== */
+.overlay {
+    position: absolute;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+.data {
+    top: 20px;
+    left: 20px;
+    width: 250px;
+}
+
+.weather {
+    bottom: 20px;
+    right: 20px;
+    width: 250px;
+}
+
+.weather h2::after {
+    content: " ⛅";
+    font-size: 1.2em;
+    margin-left: 5px;
+    display: inline-block;
+}
+
+.weather-icon-mobile {
+    width: 50px;
+    margin: 10px auto;
+    display: none;
+}
+
+.data h2::after {
+    content: " 📊";
+    font-size: 1.2em;
+    margin-left: 5px;
+}
+
+.data-icon-mobile {
+    width: 40px;
+    margin: 10px auto;
+    display: none;
+}
+
+/* ===========================
+   FOOTER
+=========================== */
+footer {
+    background-color: var(--main-red);
+    color: white;
+    text-align: center;
+    width: 100%;
+    padding: 15px;
+    font-size: 0.9rem;
+}

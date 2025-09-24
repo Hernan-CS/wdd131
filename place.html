@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 – Dynamic Web Fundamentals – Hernan Cancino</title>
+    <meta name="description" content="Country | Hernan Cancino |">
+    <meta name="author" content="Hernan Cancino">
+    <link rel="stylesheet" href="styles/place-mobile.css">
+    <link rel="stylesheet" href="styles/place-desktop.css">
+    <script src="scripts/place.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Republic of Peru</h1>
+    </header>
+
+    <main>
+        <section class="hero">
+            <picture>
+                <source media="(max-width: 600px)" srcset="images/peru-country-small.webp">
+                <source media="(min-width: 601px)" srcset="images/peru-country-large.webp">
+                <img src="images/peru-country-large.webp" alt="Republic of Peru" class="hero-img">
+            </picture>
+
+            <div class="overlay data">
+                <h2>Data</h2>
+                <img src="images/data.svg" alt="Data icon" class="data-icon-mobile">
+                <p><strong>Area:</strong> 1,285,216 sq km</p>
+                <p><strong>Population:</strong> Approx 35 million</p>
+                <p><strong>Capital:</strong> Lima</p>
+                <p><strong>Languages:</strong> Spanish, Quechua and Aymara</p>
+                <p><strong>Currency:</strong> Sol (PEN)</p>
+                <p><strong>Time Zone:</strong> UTC-5</p>
+                <p><strong>Calling Code:</strong> +51</p>
+                <p><strong>Internet TLD:</strong> .pe</p>
+            </div>
+
+            <div class="overlay weather">
+                <h2>Weather</h2>
+                <img src="images/weather.svg" alt="Weather icon" class="weather-icon-mobile">
+                <p><strong>Temperature:</strong> <span id="temp">17</span> °C</p>
+                <p><strong>Conditions:</strong> Partly Cloudy</p>
+                <p><strong>Wind:</strong> <span id="wind">3</span> km/h</p>
+                <p><strong>Wind Chill:</strong> <span id="windchill"></span></p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>
+          <span id="currentyear"></span> Hernan Cancino Santiago, Peru 🍂
+        </p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>
