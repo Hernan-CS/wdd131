@@ -23,6 +23,8 @@ body {
     flex-direction: column;
     align-items: center;
     overflow-x: hidden;
+    font-family: 'Open Sans', sans-serif;
+
 
 }
 
