@@ -1,0 +1,38 @@
+img {
+    display: block;
+    margin: 1rem auto;
+    animation-name: fadeIn;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-out;
+    animation-delay: 0.1s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+
+footer {
+  text-align: center;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  line-height: 0;
+}
+
+footer p {
+  font-size: 20px;
+  color: rgb(0, 0, 0);
+}
+
+#lastModified {
+  font-size: 15px;
+  color: rgb(228, 58, 58);
+}

@@ -1,0 +1,166 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+#menu {
+    display: none;
+}
+
+/* ============================= HEADER ============================= */
+
+header {
+    background-color: #4a0072;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    position: relative;
+}
+
+header h1 {
+    font-size: 1.5rem;
+}
+
+#menu {
+    display: none;
+    position: relative;
+    width: 2.5rem;
+    height: 2.5rem;
+    background: transparent;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-size: 0;
+  }
+
+header {
+    background-color: #4a0072;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+}
+
+header h1 {
+    font-size: 1.5rem;
+}
+
+/* -------------- NAVIGATION -------------- */
+    
+nav {
+    display: flex;
+    gap: 1.5rem;
+    padding: 0;
+    margin: 0;
+    align-items: center;
+  }
+
+  nav button:not(#menu) {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 0;
+    font-family: inherit;
+  }
+
+  nav button:not(#menu):hover {
+    text-decoration: underline;
+  }
+
+nav button:hover {
+  text-decoration: underline;
+}
+
+/* ============================= MAIN ============================= */
+
+main {
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+#temple-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  width: 100%;
+}
+
+.temple-card {
+background-color: #f0f0f0;
+box-shadow: inset 0 0 6px #ccc;
+width: 320px;
+padding: 1rem;
+text-align: center;
+}
+
+.temple-card h2 {
+margin: 0 0 0.5rem 0;
+font-weight: 600;
+font-size: 1.2rem;
+color: #000;
+}
+
+.temple-card p {
+margin: 0.25rem 0;
+font-size: 0.88rem;
+color: #000;
+}
+
+.label {
+color: purple;
+font-weight: 600;
+font-size: 0.75rem;
+text-transform: uppercase;
+margin-right: 0.2rem;
+}
+
+.temple-image {
+  width: 400px;
+  max-width: 100%;
+  height: 250px;
+  box-shadow: 0 0 8px #999;
+  margin-top: 0.5rem;
+  object-fit: cover;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* ============================= FOOTER ============================= */
+
+footer {
+  background: #4a0072;
+  padding: 1rem;
+  text-align: center;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  line-height: 1;
+}
+
+footer p {
+  font-size: 20px;
+  color: white;
+}
+
+#lastModified {
+  font-size: 15px;
+  color: rgb(184, 122, 241);
+}
+
+    

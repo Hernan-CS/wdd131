@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 – Dynamic Web Fundamentals – Hernan Cancino</title>
+    <meta name="description" content="Temples | Hernan Cancino |">
+    <meta name="author" content="Hernan Cancino">
+    <link rel="stylesheet" href="styles/filtered-temples.css">
+    <link rel="stylesheet" href="styles/filtered-temples-large.css">
+</head>
+<body>
+    <header>
+        <h1>Temple Album</h1>
+        <nav>
+        <!-- Instead of <ul> & <li>, I used <button>, since they won't redirect you to anywhere, but do something.--->
+            <button id="menu" type="button"></button>
+            <button data-filter="home">Home</button>
+            <button data-filter="old">Old</button>
+            <button data-filter="new">New</button>
+            <button data-filter="large">Large</button>
+            <button data-filter="small">Small</button>
+        </nav>
+    </header>
+    <main>
+        <div id="temple-container"></div> <!-- JS script will do the magic here. -->
+        <script src="scripts/filtered-temples.js" defer></script>
+    </main>
+
+    <footer>
+        <p>
+          <span id="currentyear"></span> Hernan Cancino Santiago, Peru 🍂
+        </p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>
