@@ -1,9 +1,9 @@
 @media (max-width: 768px) {
-  #menu {
+  nav a#menu {
     display: block;
   }
 
-  #menu::before {
+  nav a#menu::before {
     content: "☰";
     font-size: 2rem;
     position: absolute;
@@ -13,7 +13,7 @@
     pointer-events: none;
   }
 
-  #menu.open::before {
+  nav a#menu.open::before {
     content: "❌";
   }
 
@@ -24,11 +24,11 @@
     align-items: flex-start;
   }
 
-  nav button:not(#menu) {
+  nav a:not(#menu) {
     display: none;
   }
 
-  nav.open button:not(#menu) {
+  nav.open a:not(#menu) {
     display: block;
     width: 100%;
     padding: 1rem;
@@ -40,7 +40,7 @@
     cursor: pointer;
   }
 
-  nav.open button:not(#menu):hover {
+  nav.open a:not(#menu):hover {
     background-color: #bbb;
     color: #333;
     font-weight: 700;
@@ -56,7 +56,7 @@
     flex: 1;
   }
 
-  #menu {
+  nav a#menu {
     margin-left: auto;
     position: relative;
     width: 2.5rem;
@@ -66,4 +66,5 @@
     color: white;
     cursor: pointer;
     font-size: 0;
-  }};
+  }
+}

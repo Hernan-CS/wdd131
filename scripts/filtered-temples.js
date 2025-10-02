@@ -107,11 +107,11 @@
   displayTemples(temples);
 
   // Filter buttons
-  const filterButtons = document.querySelectorAll('nav button[data-filter]');
+  const filterLinks = document.querySelectorAll('nav a[data-filter]');
 
-  filterButtons.forEach(button => {
-    button.addEventListener('click', () => {
-      const filter = button.getAttribute('data-filter');
+  filterLinks.forEach(link => {
+    link.addEventListener('click', () => {
+      const filter = link.getAttribute('data-filter');
 
       let filteredTemples;
 
@@ -149,18 +149,18 @@
 
       // Close mobile menu if open, so when you press the button it hides.
       nav.classList.remove('open');
-      menuButton.classList.remove('open');
+      menuLink.classList.remove('open');
     });
   });
 
   /*---- Button code -----*/
 
-  const menuButton = document.getElementById('menu');
+  const menuLink = document.getElementById('menu');
   const nav = document.querySelector('nav');
 
-  menuButton.addEventListener('click', () => {
+  menuLink.addEventListener('click', () => {
     nav.classList.toggle('open');
-    menuButton.classList.toggle('open');
+    menuLink.classList.toggle('open');
   });
 
   /* ---- Date code ----- */
