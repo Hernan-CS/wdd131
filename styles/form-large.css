@@ -1,0 +1,35 @@
+@media (min-width: 768px) {
+    main {
+        max-width: 800px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+        align-items: start;
+    }
+
+    form {
+        grid-column: span 2;
+    }
+
+    header, footer {
+        margin: 0 auto;
+        max-width: 800px;
+    }
+    
+    .rating-options span {
+        color: rgb(163, 11, 11);
+        font-size: 1.2rem;
+    }
+
+    input[type="radio"],
+    input[type="checkbox"] {
+        width: 25px;
+        height: 25px;
+        cursor: pointer;
+    }
+
+    button {
+        width: 200px;
+        justify-self: center;
+    }
+}

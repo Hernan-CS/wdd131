@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 – Dynamic Web Fundamentals – Hernan Cancino | Form</title>
+    <meta name="description" content="Creating forms| Hernan Cancino">
+    <meta name="author" content="Hernan Cancino">
+    <link rel="stylesheet" href="styles/form.css">
+    <link rel="stylesheet" href="styles/form-large.css">
+    <script src="scripts/form.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Product Review</h1>
+    </header>
+
+    <main>
+        <form action="review.html" method="get">
+            <label for="productName">Product Name</label>
+            <select id="productName" name="productName" required>
+                <option value="" disabled selected>Select a Product ...</option>
+            </select>
+
+        <fieldset class="rating-fieldset">
+            <legend>Overall Rating</legend>
+                <div class="rating-options">
+                    <label>
+                        <span>✿</span>
+                        <input type="radio" id="rating1" name="rating" value="1" required>
+                    </label>
+                    <label>
+                        <span>✿✿</span>
+                        <input type="radio" id="rating2" name="rating" value="2" required>
+                    </label>
+                        <label>
+                        <span>✿✿✿</span>
+                        <input type="radio" id="rating3" name="rating" value="3" required>
+                    </label>
+                        <label>
+                        <span>✿✿✿✿</span>
+                        <input type="radio" id="rating4" name="rating" value="4" required>
+                    </label>
+                    <label>
+                        <span>✿✿✿✿✿</span>
+                        <input type="radio" id="rating5" name="rating" value="5" required>
+                    </label>
+                </div>
+        </fieldset>
+
+            <label for="installDate">Date of Installation</label>
+            <input type="date" id="installDate" name="installDate" required>
+
+            <fieldset>
+                <legend>Which features did you find useful <br><em>(Check all that apply)</em><br></legend>
+                <div class="rating-group">
+                    <label><input type="checkbox" id="durability" name="features" value="durability"> Durability</label>
+                    <label><input type="checkbox" id="ease" name="features" value="ease of use"> Ease of Use</label>
+                    <label><input type="checkbox" id="performance" name="features" value="performance"> Performance</label>
+                    <label><input type="checkbox" id="design" name="features" value="design"> Design</label>
+                </div>
+            </fieldset>
+
+            <label for="reviewText">Written Review <span>(Optional)</span></label>
+            <textarea id="reviewText" name="reviewText" rows="5" cols="30"></textarea>
+
+            <label for="userName">Your Name <span>(Optional)</span></label>
+            <input type="text" id="userName" name="userName">
+
+            <button type="submit">Submit</button>
+        </form>
+    </main>
+
+    <footer>
+        <p>
+          <span class="year" id="currentyear"></span> Hernan Cancino Santiago, Peru 🍂
+        </p>
+        <p id="lastModified"></p>
+    </footer>
+    
+</body>
+</html>
