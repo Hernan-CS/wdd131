@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Steal a Language Website - WDD131</title>
+  <meta name="description" content="Info page for the website Steal a Language (STL) by Hernan Cancino, as a project for the course WDD131">
+  <meta name="author" content="Hernan Cancino">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@400;600;700&family=Inria+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/stl-info-mobile.css"/>
+  <link rel="stylesheet" href="styles/stl-info-desktop.css"/>
+  <script src="scripts/stl-info.js" defer></script>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <div class="logo">
+      <picture>
+        <source media="(min-width: 601px)" srcset="images/stl-large-logo.png">
+        <img src="images/stl-logo.png" alt="Logo">
+      </picture>
+    </div>
+
+    <button class="menu-toggle" aria-label="Open menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <nav>
+      <a href="stl-home.html">Home</a>
+      <a href="stl-info.html">Info</a>
+      <a href="stl-tips.html">Tips</a>
+      <a href="stl-faq.html">FAQ</a>
+    </nav>
+  </header>
+
+  <!-- MAIN -->
+  <main class="main-bg">
+    <section class="blog-section">
+      <h2>Common European Framework of Reference for Languages (CEFR)</h2>
+      <div id="card-container" class="card-grid"></div>
+    </section>
+
+    <section class="features">
+      <div  class="features-left">
+      <h3>Steps for Certification</h3>
+      <p><span>1. Choose Your Exam:</span> Based on your goals (study, work, migration, etc.), you'll choose an exam from one of the official testing bodies. Most tests have various levels (A1 to C2 on the CEFR scale, for example).<br>
+        <br><span>2. Register:</span> You need to register online on the official website of the exam you choose. Most exams have test centers worldwide, and some are available remotely.<br>
+        <br><span>3. Prepare:</span> Use study guides, take practice tests, attend preparation courses, or work with a tutor to improve your skills.<br>
+        <br><span>4. Take the Exam:</span> On the exam day, you will be tested in different skills, depending on the type of exam. Some exams might have an interview component, while others might not.<br>
+        <br><span>5. Receive Your Certification:</span> After taking the exam, you will receive a score. If you pass, you will receive a certificate indicating your level. The validity of this certificate can range from 2 to 5 years, depending on the exam.<br>
+      </p>
+      </div>
+
+      <div class="features-right">
+        <div class="feature">
+          <div class="icon">✎</div>
+          <div class="text">
+            <h4>TOEFL & IELTS</h4>
+            <p class="sub"><strong>~ TOELF ~</strong></p>
+            <p><strong>Purpose:</strong> For studying, work, or immigration in English-speaking countries.</p>
+            <p><strong>Levels:</strong> Scores range from 0 to 120.</p>
+            <p><strong>Structure:</strong> Reading, listening, speaking, writing (varied times and questions).</p>
+            <p><strong>How it Works:</strong> Taken online or at a test center, no pass/fail—just proficiency.</p>
+            <p class="sub"><strong><br>~ IELTS ~</strong></p>
+            <p><strong>Purpose:</strong> For study, migration, and professional use.</p>
+            <p><strong>Levels:</strong> Scored 1-9, with Academic and General Training versions.</p>
+            <p><strong>Structure:</strong> Listening, reading, writing, speaking (in-person interview).</p>
+            <p><strong>How it Works:</strong> Paper or computer-based, with an in-person speaking test.</p>
+          </div>
+        </div>
+        <div class="feature">
+          <div class="icon">✎</div>
+          <div class="text">
+            <h4>Cambridge English Exams</h4>
+            <p>KET (A2), PET (B1), FCE (B2), CAE (C1), CPE (C2).</p>
+          </div>
+        </div>
+        <div class="feature">
+          <div class="icon">✎</div>
+          <div class="text">
+            <h4>Michigan English Exams</h4>
+            <p>MELAB (B1-C1)<br>ECPE (C2)<br>MET (B1-B2)<br>MELICET (B1-B2)</p>
+          </div>
+        </div>
+      </div> 
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-grid">
+      <div class="copyright">
+        <p>© <span id="year"></span> STL. All rights reserved.
+      </div>
+      <div class="slogan">
+        Just steal it!
+      </div>
+      <div class="socials">
+        <a href="https://www.facebook.com/"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/instagram.svg" alt="Instagram"></a>
+        <a href="https://www.instagram.com/"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/facebook.svg" alt="Facebook"></a>
+        <a href="https://x.com/"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/x.svg" alt="X"></a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

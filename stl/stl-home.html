@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Steal a Language Website - WDD131</title>
+  <meta name="description" content="Homepage for the website Steal a Language (STL) by Hernan Cancino, as a project for the course WDD131">
+  <meta name="author" content="Hernan Cancino">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@400;600;700&family=Inria+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/stl-home-mobile.css"/>
+  <link rel="stylesheet" href="styles/stl-home-desktop.css"/>
+  <script src="scripts/stl-home.js" defer></script>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header>
+  <div class="logo">
+    <picture>
+      <source media="(min-width: 601px)" srcset="images/stl-large-logo.png">
+      <img src="images/stl-logo.png" alt="Logo">
+    </picture>
+  </div>
+
+  <button class="menu-toggle" aria-label="Open menu">
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
+
+    <nav>
+      <a href="stl-home.html">Home</a>
+      <a href="stl-info.html">Info</a>
+      <a href="stl-tips.html">Tips</a>
+      <a href="stl-faq.html">FAQ</a>
+    </nav>
+  </header>
+
+  <!-- MAIN -->
+  <main class="main-bg">
+    <img src="images/stl-banner.png" alt="Fondo STL" class="bg-image" />
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-grid">
+      <div class="copyright">
+        <p>© <span id="year"></span> STL. All rights reserved.
+      </div>
+      <div class="slogan">
+        Just steal it!
+      </div>
+      <div class="socials">
+        <a href="https://www.facebook.com/"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/instagram.svg" alt="Instagram"></a>
+        <a href="https://www.instagram.com/"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/facebook.svg" alt="Facebook"></a>
+        <a href="https://x.com/"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/x.svg" alt="X"></a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

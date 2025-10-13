@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Steal a Language Website - WDD131</title>
+  <meta name="description" content="Info page for the website Steal a Language (STL) by Hernan Cancino, as a project for the course WDD131">
+  <meta name="author" content="Hernan Cancino">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@400;600;700&family=Inria+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/stl-faq-mobile.css"/>
+  <link rel="stylesheet" href="styles/stl-faq-desktop.css"/>
+  <script src="scripts/stl-faq.js" defer></script>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <div class="logo">
+      <picture>
+        <source media="(min-width: 601px)" srcset="images/stl-large-logo.png">
+        <img src="images/stl-logo.png" alt="Logo">
+      </picture>
+    </div>
+
+    <button class="menu-toggle" aria-label="Open menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <nav>
+      <a href="stl-home.html">Home</a>
+      <a href="stl-info.html">Info</a>
+      <a href="stl-tips.html">Tips</a>
+      <a href="stl-faq.html">FAQ</a>
+    </nav>
+  </header>
+
+  <!-- MAIN -->
+  <main class="main-bg">
+    <section class="faq-section">
+      <h1>FAQ</h1>
+      <p class="subtitle">Let's solve those loose ends!</p>
+      <hr>
+
+      <div class="faq-grid">
+        <div class="faq-item">
+          <h3>I'm not sure what my English level is. How can I find out?</h3>
+          <p>You can take a free online test that measures your skills in reading, writing, speaking, and listening. But, honestly, if you're just having casual conversations in English and understanding most of what you read or hear, you're probably somewhere between B1 and B2. A good way to figure it out is by looking at real-life situations, like: “Can I have a conversation with a native speaker without struggling too much?”</p>
+        </div>
+        <div class="faq-item">
+          <h3>Can I jump from A2 to C1?</h3>
+          <p>Technically, it's possible, but it's pretty rare. The CEFR levels build on each other, so jumping from A2 (Elementary) to C1 (Advanced) would be like skipping a few grades in school. You'd probably miss out on crucial skills needed at B1 and B2. It's better to go step by step, but if you're really motivated, intensive study and practice might make it quicker.</p>
+        </div>
+        <div class="faq-item">
+          <h3>Why does everyone talk about B2 as being the "magic" level?</h3>
+          <p>B2 is kind of the sweet spot where you're not just surviving in English, but you're also pretty comfortable. You can talk about most topics without getting lost, you can read newspapers or novels without too much difficulty, and you can express yourself clearly. It's like being "fluent enough" to function in daily life, travel, or work without major barriers.</p>
+        </div>
+        <div class="faq-item">
+          <h3>Is C1 really that much harder than B2?</h3>
+          <p>Yes, C1 is harder, but it's also more about polish and fluidity. At B2, you're still working on grammar and vocabulary gaps. At C1, you should be able to speak and write with fewer mistakes, handle complex topics easily, and understand subtle meanings. It's not just about knowing the language—it's about using it smoothly in almost any situation.</p>
+        </div>
+        <div class="faq-item">
+          <h3>Do I really need a C1 level to work in an English-speaking country?</h3>
+          <p>Not always. It depends on the job. For many positions, a B2 level is enough—especially if you're not expected to use English in very formal or high-level situations. But for jobs in fields like law, business, or academia, C1 might be the minimum. It's always good to check the specific requirements for the job you're after.</p>
+        </div>
+        <div class="faq-item">
+          <h3>What if I can understand movies in English, but still struggle to speak?</h3>
+          <p>That's super common! Listening and speaking are different skills. You might be able to understand what's happening in a movie, but speaking requires quicker reactions, vocabulary recall, and confidence. To improve, try speaking as much as you can—whether that's with a tutor, friends, or even practicing alone. The more you talk, the easier it gets.</p>
+        </div>
+        <div class="faq-item">
+          <h3>I'm stuck at B2. How do I get past it?</h3>
+          <p>It can be tough! B2 is where a lot of people plateau. The key is consistent practice and challenging yourself. Start reading more advanced materials, listen to podcasts or TED Talks in English, write essays, and engage in conversations with native speakers. At this level, it's about expanding your vocabulary and refining your grammar. Don't be afraid to make mistakes—that's part of the process.</p>
+        </div>
+        <div class="faq-item">
+          <h3>Why does my grammar seem perfect when I study, but I still make mistakes when I speak in real life?</h3>
+          <p>That's something a lot of people experience! When you're studying grammar rules, it's easier to focus on perfecting your sentences. But in real-life conversations, you're thinking faster, and the focus is on communication rather than perfect grammar. Native speakers often use contractions, shortcuts, and informal language that can make grammar seem less important in everyday speech. The key is to practice speaking more, and don't worry too much about making mistakes—just focus on getting your point across. Over time, your grammar will improve as you become more comfortable in conversations.</p>
+        </div>
+        <div class="faq-item">
+          <h3>Is reaching C2 level actually possible for non-native speakers, or is it just for people who grew up speaking English?</h3>
+          <p>Yes, it's absolutely possible! Reaching C2 doesn't mean you need to sound like a native speaker, but it does mean you have a deep understanding of the language. You'll be able to express yourself fluently, use idiomatic expressions, and understand even the most complex texts and conversations. It might take years of study and practice, but many non-native speakers do reach C2—especially if they've lived in an English-speaking environment or constantly expose themselves to the language. It requires a lot of dedication, but it's totally doable!</p>
+        </div>
+      </div>
+    </section>    
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-grid">
+      <div class="copyright">
+        <p>© <span id="year"></span> STL. All rights reserved.
+      </div>
+      <div class="slogan">
+        Just steal it!
+      </div>
+      <div class="socials">
+        <a href="https://www.instagram.com/"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/instagram.svg" alt="Instagram"></a>
+        <a href="https://www.facebook.com/"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/facebook.svg" alt="Facebook"></a>
+        <a href="https://x.com/"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/x.svg" alt="X"></a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

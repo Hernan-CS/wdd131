@@ -1,0 +1,66 @@
+@media screen and (min-width: 601px) {
+  
+  body {
+    overflow-x: hidden;
+  }
+  
+  .menu-toggle {
+    display: none;
+  }
+  
+  header {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+  }
+
+  .logo img {
+    width: 150px;
+    height: 50px;
+    transition: transform 0.3s ease;
+  }
+
+  .logo img:hover {
+    transform: scale(1.2);
+  }
+
+  nav {
+    gap: 40px;
+  }
+
+  .hero-wrap {
+    height: 400px;
+  }
+
+  .image-card {
+    width: 300px;
+    height: 200px;
+  }
+
+  .image-card img {
+    width: 120px;
+  }
+
+  footer {
+    padding: 20px 40px;
+  }
+
+  .footer-grid {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  footer .copyright {
+    text-align: left;
+  }
+
+  footer .slogan {
+    text-align: center;
+  }
+
+  footer .socials {
+    justify-content: flex-end;
+  }
+}

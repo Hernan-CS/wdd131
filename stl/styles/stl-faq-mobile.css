@@ -1,0 +1,247 @@
+:root {
+  --primary-color: #46805A;
+  --secondary-color: #91C590;
+  --accent1-color: #000000;
+  --accent2-color: #F7F3E3;
+
+  --heading-font: "Fraunces", serif;
+  --paragraph-font: "Inria Sans", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: white;
+  color: var(--accent1-color);
+}
+
+/* HEADER */
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+  background: var(--accent2-color);
+  padding: 15px;
+}
+
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  font-family: var(--paragraph-font);  
+}
+
+nav a {
+  text-decoration: none;
+  color: black;
+  font-size: 17px;
+  transition: all 0.3s ease;
+}
+
+nav a:hover {
+  color: #91C590;
+  text-shadow: 0 0 1px #91C590,
+               0 0 3px #91C590,
+               0 0 5px #91C590,
+               0 0 8px #91C590;
+}
+
+/* MAIN */
+
+.faq-section {
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 0 20px;
+  text-align: center;
+  font-family: var(--paragraph-font);
+}
+
+.faq-section h1 {
+  font-size: 28px;
+  color: var(--primary-color);
+  margin-bottom: 5px;
+  font-family: var(--heading-font);
+}
+
+.faq-section .subtitle {
+  font-family: var(--paragraph-font);
+  color: var(--accent1-color);
+  margin-bottom: 25px;
+  font-size: 16px;
+}
+
+.faq-section hr {
+  border: none;
+  border-top: 2px solid #ccc;
+  width: 90%;
+  margin: 0 auto 30px auto;
+}
+
+.faq-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px 30px;
+  text-align: left;
+}
+
+.faq-item h3 {
+  font-size: 17px;
+  font-family: var(--paragraph-font);
+  color: var(--accent1-color);
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+
+.faq-item p {
+  font-family: var(--paragraph-font);
+  font-size: 14px;
+  color: #555;
+  line-height: 1.5;
+}
+
+/* FOOTER */
+footer {
+  background: var(--accent2-color);
+  border-top: 1px solid #ccc;
+  padding: 20px;
+  text-align: center;
+}
+
+.footer-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  font-family: var(--paragraph-font);  
+}
+
+footer .copyright {
+  color: black;
+  font-size: 12px;
+}
+
+.slogan {
+  font-size: 19px;
+  font-weight: bold;
+  color: var(--secondary-color);
+  display: inline-block;
+  overflow: hidden;
+  background: linear-gradient(
+    to right,
+    #46805A 0%,
+    #ffffff 50%,
+    #46805A 100%
+  );
+  background-size: 200% auto;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  animation: shine 5s ease-in-out infinite;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+@keyframes shine {
+  0% {
+    background-position: -200% center;
+  }
+  100% {
+    background-position: 200% center;
+  }
+}
+
+footer .socials {
+  display: flex;
+  gap: 14px;
+}
+
+footer .socials img {
+  width: 20px;
+  height: 20px;
+  opacity: 0.8;
+}
+
+footer .socials img:hover {
+  opacity: 1;
+}
+
+@media (max-width: 600px) {
+  .menu-toggle {
+    width: 25px;
+    height: 22px;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: none;
+    border: none;
+    cursor: pointer;
+    z-index: 20;
+  }
+
+  .menu-toggle span {
+    display: block;
+    height: 4px;
+    width: 100%;
+    background-color: var(--primary-color);
+    border-radius: 4px;
+    transition: all 0.4s ease;
+  }
+
+  .menu-toggle.active span:nth-child(1) {
+    transform: translateY(12px) rotate(45deg);
+  }
+
+  .menu-toggle.active span:nth-child(2) {
+    opacity: 0;
+  }
+
+  .menu-toggle.active span:nth-child(3) {
+    transform: translateY(-12px) rotate(-45deg);
+  }
+
+  header {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    position: relative;
+  }
+
+  .logo img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+    transition: transform 0.3s ease;
+  }
+
+  nav {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    background: var(--accent2-color);
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    padding: 15px 0;
+    border-top: 1px solid #ccc;
+    z-index: 10;
+  }
+
+  nav.active {
+    display: flex;
+  }
+  .faq-grid {
+    grid-template-columns: 1fr;
+  }
+}
